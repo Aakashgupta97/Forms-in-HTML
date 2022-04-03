@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <center>
+    <h2>Forms In Practice</h2>
+  </center>
+  <p>
+    Fill the below form
+  </p>
+  <form class="" action="index.html" method="post">
+    <label> Your Name:</label>
+    <input type="text" name="" value="">
+    <br />
+    <h4>Button</h4>
+    <input type="Button" name="" value="This is a button">
+    <h4>Datalist</h4>
+    <label>Choose a flavor:</label>
+    <input list="ice-cream-flavors" name="ice-cream-choice">
+    <datalist id="ice-cream-flavors">
+      <option value="Chocolate">
+      <option value="Coconut">
+      <option value="Mint">
+      <option value="Strawberry">
+      <option value="Vanilla">
+    </datalist>
+    <input type="Submit" name="" value="Submit">
+    <h4>Fieldset</h4>
+    <fieldset>
+      <legend>Your Details</legend>
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname">
+      <br /><br>
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" id="lname">
+      <br><br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+      <br><br>
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob">
+      <br><br>
+      <input type="submit" name="" value="submit">
+    </fieldset>
+    <h4>Meter</h4>
+    <label for="marks">Exam Marks</label>
+    <meter value="80" min="0" low="33" high="76" max="100">75</meter>
+    <!--Meter Attributes
+          Value: The current numeric value. This must be between the minimum and maximum values (min attribute and max attribute) if they are specified. If unspecified or malformed, the value is 0.
+          Min: The lower numeric bound of the measured range. This must be less than the maximum value (max attribute), if specified. If unspecified, the minimum value is 0.
+          Max: The upper numeric bound of the measured range
+          low: The upper numeric bound of the low end of the measured range. This must be greater than the minimum value (min attribute)
+          High: The lower numeric bound of the high end of the measured range. This must be less than the maximum value
+          optium: This attribute indicates the optimal numeric value. It must be within the range (as defined by the min attribute and max attribute) -->
+    <h4>Optgroup (The option group element)</h4>
+    <p>
+      The optgroup HTML element creates a grouping of options within a select element.
+    </p>
+    <label for="cities">Select City: </label>
+    <select id="cities">
+      <optgroup label="Uttrakhand">
+        <option>Dehardun</option>
+        <option>Almora</option>
+        <option>Haridwar</option>
+      </optgroup>
+      <optgroup label="Uttar Pradesh">
+        <option>Saharanpur</option>
+        <option>Banaras</option>
+        <option>Allahabad</option>
+      </optgroup>
+    </select>
+    <h4>Progress Element</h4>
+    <p>The progress HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</p>
+    <label for="Prgress">Task Completion</label>
+    <progress value="10" max="100">10%</progress>
+    <h4>Text Area</h4>
+    <p>The textarea HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form</p>
+    <label for="Text">Write your thoughts:</label>
+    <br>
+    <textarea name="text" rows="8" cols="80">Believe in yourself...</textarea>
+    <h3>Types of Input</h3>
+    <label>This is a button</label>
+    <input type="button" name="" value="">
+    <br><br>
+    <label>This a checkbox</label>
+    <input type="checkbox" name="" value="">
+    <br><br>
+    <label>Color Picker</label>
+    <input type="color" name="" value="">
+    <br><br>
+    <label>Date</label>
+    <input type="date" name="" value="">
+    <br><br>
+    <label>Datetime local</label>
+    <input type="datetime-local" name="" value="">
+    <br><br>
+    <label>Email</label>
+    <input type="email" name="" value="">
+    <br><br>
+    <label>File</label>
+    <input type="file" accept="image/png, image/jpg">
+    <br><br>
+    <label>Hidden</label>
+    <!--	A control that is not displayed but whose value is submitted to the server. There is an example in the next column, but it's hidden!-->
+    <input type="hidden" name="" value="">
+    <br><br>
+    <label>Month</label>
+    <input type="month" name="" value="">
+    <br><br>
+    <label>Number</label>
+    <input type="number" name="" value="">
+    <br><br>
+    <label>Password</label>
+    <input type="password" name="" value="">
+    <br><br>
+    <label>Radio</label>
+    <input type="radio" name="" value="">
+    <br><br>
+    <label>Range</label>
+    <input type="range" name="" value="">
+    <br><br>
+    <label>Reset</label>
+    <input type="reset" name="" value="">
+    <br><br>
+    <label>Search</label>
+    <input type="search" name="" value="">
+    <br><br>
+    <label>Submit</label>
+    <input type="submit" name="" value="">
+    <br><br>
+    <label>URL</label>
+    <input type="url" name="" value="">
+    <br><br>
+    <label>Tel</label>
+    <input type="tel" maxlength="12" name="" value="+91">
+    <h4>**Along with these there are also a lot of input attribute which are useful</h4>
+  </form>
+
+
+
+
+
+
+
+</body>
+
+</html>
